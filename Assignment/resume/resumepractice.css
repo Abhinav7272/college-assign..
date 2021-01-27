@@ -1,0 +1,36 @@
+
+body {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+}    
+mark {
+   background-color: grey;
+   color: black;
+ }
+
+ .line{
+     background-color: grey;
+ }
+ #hrr{ 
+     height:1px;
+     background-color: black;
+   
+   
+
+
+ }
+ tr,th{
+     padding:0%;
+     padding-bottom: 0%;
+     margin: -2%;
+ }
+ .tab{
+   
+   padding-top: 3px;
+   /* table-layout: fixed; */
+     width: 95%;
+     text-align: left ;
+     padding: 0%;
+     
+ } 

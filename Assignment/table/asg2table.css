@@ -1,0 +1,25 @@
+table , td  {
+border-collapse: collapse;
+border: 1px dotted black;
+}
+tr:nth-child(even) {
+    background-color :rgb(218, 208, 208);}
+table{
+    height: 250px;
+    width: 700px;
+    
+}
+.tablefull{
+    text-align: center;
+    margin-left:200px;
+    
+}
+
+#head1{
+    color: red;
+}
+.table2{
+    color:purple;
+
+
+}

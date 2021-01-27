@@ -1,0 +1,54 @@
+email{
+    width: 100px;
+}
+table tr,td{
+    /* border: 1px solid black; */
+    /* border-collapse: collapse; */
+    text-align: left;
+    color: darkgrey;
+    border-radius: 5px;
+    
+}
+input,select{
+    border-radius: 5px;
+    font-size: 10x;
+    height: 30px;
+}
+tr{ 
+    padding-top: 2px;
+    width: 50px;
+    height: 25px;
+}
+.sum{
+    width: 478px;
+   
+}
+#btn{
+    background-color: steelblue;
+    border-radius: 5px;
+}
+input[type=number]{
+    width: 149px;
+} 
+.big {
+    color:greenyellow;
+    background-image: url(form1bg.jpeg);
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width:600px;
+    border: 1px solid black;
+    text-align: center;
+    /* align-content: center;
+    align-items: center; */
+
+}
+/* table{
+} */
+table{
+    align-content: center;
+    /* text-align: center;
+     */
+     margin-left: auto;
+     margin-right: auto;
+}

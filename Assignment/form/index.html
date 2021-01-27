@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=<device-width>, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="asgformtry2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="big">
+        <div id="head1"><h2> Enter Your details</h2></div>
+        <div id="head2"><h4>Fill the application form below and submit .</h4></div>
+        <div class="tab">
+        <table>
+                <tr>
+                    <td >Name*</td>
+                    <td> <input type="text" placeholder="First Name" size="30">
+                    <input type="text" placeholder="Last Name" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Email Address*</td>
+                    <td><input type="email" placeholder="mailexample@gmail.com" size="66"></td>
+                </tr>
+                <tr>
+                    <td>Phone NUmber*</td>
+                    <td><input type="text" placeholder="phone number" size="66"></td>
+                </tr>
+                <tr>
+                    <td>Gender*</td>
+                    <td>
+                        <select class="sum" size="1"> 
+                        <!-- <option value="Male" >Gender</option> -->
+                        <optgroup label="gender"> 
+                        <option value="Male">Male </option>
+                        <option value="Female">Female </option>
+                        <option value="Others">Others </option>
+                         </optgroup>
+                        </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Citizen*</td>
+                    <td>
+                    <select class="sum">
+                        <option value="select">Select Country </option>
+                        <option value="ind"> India</option>
+                        <option value="apk">pak </option>
+                        <option value="Others">Others </option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth*</td>
+                    <td class="dob">
+                        <input type="number" placeholder="Day" size="15">
+                        <input type="number" placeholder="Month" size="15">
+                        <input type="number" placeholder="Year " size="15">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address*</td>
+                    <td><input type="text" placeholder="Street Address" size="30">
+                        <input type="text" placeholder="Street Line 2" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="text" placeholder="Landmark" size="30">
+                        <input type="text" placeholder="City" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="text" placeholder="State/Province" size="30" >
+                        <input type="text" placeholder="Postal/ZipCode" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input id="btn"  class ="sum" type="submit" placeholder="SUBMIT" width=""></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
