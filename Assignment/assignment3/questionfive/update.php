@@ -43,17 +43,23 @@ include('conn.php');
         <!-- editanddelete.php -->
             name <input type="text" name="username" value=" <?php  echo $row['name'] ?>" placeholder="<?php  echo $row['name'] ?>" required><br>
             Email <input type="email" name="email"  value=" <?php  echo $row['email'] ?>" placeholder="<?php   echo $row['email']?> " required><br>
-            Select gender <select name="gender" >
+            <!-- Select gender <select name="gender" >
                 <option value="defg"><?php echo $row['gender'] ?></option>
                 <option value="male">male</option>
                 <option value="female">female</option>
                 <option value="others">others</option>
-            </select><br>
+            </select><br> -->
+            Select gender
+            <input type="radio" id="male" name="gender" value="male"<?php if($gender=="male" ) {echo "checked";}?>>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender"value="female"<?php if($gender=="female" ) {echo "checked";}?>>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="others"<?php if($gender=="others" ) {echo "checked";}?>>
+            <label for="other">Other</label><br>
             Select City <select name="city" >
-                <option value="defc"><?php echo $row['city'] ?></option>
-                <option value="Dehradun">Dehradun</option> 
-                <option value="Delhi">Delhi</option>
-                <option value="Jaipur">Jaipur</option>
+                <option value="Dehradun"<?php if($city=="Dehradun" ) {echo "selected";}?>>Dehradun</option> 
+                <option value="Delhi"<?php if($city=="Delhi" ) {echo "selected";}?>>Delhi</option>
+                <option value="Jaipur"<?php if($city=="jaipur" ) {echo "selected";}?>>Jaipur</option>
             </select><br>
             <input type="submit" name="submit" value="Click here to update"  >
             

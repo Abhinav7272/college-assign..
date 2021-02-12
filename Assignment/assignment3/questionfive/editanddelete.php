@@ -30,9 +30,19 @@ $result = mysqli_query($conn, $sql);
     <td><?php echo $row['gender'] ?> </td>
     <td><?php echo $row['city'] ?> </td>
     <td><a href="update.php?id=<?php echo $row['id']?>" ><input type="button" value="Edit" > </a></td>
-    <td><a href="delete.php?id=<?php echo $row['id']?>"> <input type="button" value="delete"></a></td>
-
+    <td><a href="delete.php?id=<?php echo $row['id']?>" ><input  onclick="return del()" type="button" value="delete" ></td>
+     <!-- <td><button onclick="del()" type="button" value="delete" ></td> -->
     </tr>
     <?php } ?>
   </tbody>
 </table>
+<script>
+function del(){
+  if(confirm("do you want to delete")){
+       return true ;
+  }
+  else{
+    return false;
+  }
+}
+</script>
