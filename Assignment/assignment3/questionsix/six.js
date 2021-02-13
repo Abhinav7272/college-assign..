@@ -1,4 +1,3 @@
-var num1 = Number(prompt("Enter first number: "));
-var num2 = Number(prompt("Enter second number: "));
-var sum = num1 + num2;
-document.write('Sum is '+sum);
+var num1 = (prompt("Enter first name: "));
+var num2 = (prompt("Enter second name: "));
+document.write('welcome to coding world '+num1+' '+num2);
