@@ -1,0 +1,14 @@
+.outer{
+    height: 400px;
+    width: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+#inner{
+    
+    font-size: 2rem;
+    margin-left: 40px;
+    margin: auto;
+}
