@@ -1,0 +1,41 @@
+.square{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;  
+    border: 1px solid black;
+}
+.rectangle-v {
+    height:40px;
+    width: 100px;
+    border: 1px solid black;
+    margin: auto;
+}
+.rectangle-h{
+    height:100px;
+    width: 40px;
+    border: 1px solid black;
+}
+.oval {
+    width: 200px;
+    height: 100px;
+    border-radius: 100px / 50px;
+    border: 1px  solid black;
+  }
+#shape{
+    width: 700px;
+    height: 400px;
+    text-align: center;
+  
+}
+/* .output{
+    width: 20px;
+    border: 1px solid black;
+    height: 10px;
+    margin: auto;
+    
+} */
