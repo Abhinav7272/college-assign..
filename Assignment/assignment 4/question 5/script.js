@@ -4,9 +4,7 @@ logic();
 var start 
 
 function logic(){
-    
     setInterval(changeshape,(Math.floor(Math.random()*500)+1200));
-
 }
 function response(){ 
     var end = Date.now(); 
@@ -22,7 +20,8 @@ function changecolor(){
     return "rgb(" +a+", "+ b+", " +c+")";
 }
 function changeshape(){
-    start = new Date().getTime();
+    // start = new Date().getTime();
+    start = Date.now();
     var cs= document.getElementById('whatyouwant');
     cs.classList.remove(arr[s]);
     s = Math.floor(Math.random()*5);
@@ -31,7 +30,7 @@ function changeshape(){
     var mar3 =Math.floor(Math.random()*700);
     var mar4 =Math.floor(Math.random()*500);
 
-    console.log(arr[s]);
+    // console.log(arr[s]);
     cs= document.getElementById('whatyouwant');
     cs.classList.add(arr[s]);
     cs.style.marginTop= mar1+"px";

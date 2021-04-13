@@ -2,11 +2,11 @@
 include('conn.php');
 ?>
 <?php
-if (isset($_POST['username'])) {
-    $username = $_POST['username'];
-} else {
-    $username = '';
-}
+// if (isset($_POST['username'])) {
+//     $username = $_POST['username'];
+// } else {
+//     $username = '';
+// }
 $sql = "SELECT `id`, `name`, `email`, `gender`, `city` FROM `user`";
 $result = mysqli_query($conn, $sql);
 ?>

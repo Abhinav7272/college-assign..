@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h2 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        body {
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+        }
+
+        #answer {
+            height: 25px;
+            border: 1px solid black;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2>Number Guessing Game</h2>
+        <h3> we have selected a random number between 1 and 100. see if you can guess it <br>in 10 turn or fewer . we'll
+            tell you if your guess was too high or too low</h3>
+
+    </div>
+    Enter a guess : <input type="number" id="num">
+    <input type="submit" value="submit guess" id="sub" onclick="checkguess()">
+    <div id="answer"></div>
+    <div id="lastResult">previous guess:</div>
+    <div id="lh"></div>
+    <script>
+        let num = document.getElementById("num");
+        let sub = document.getElementById("sub");
+        let answer = document.getElementById("answer");
+        let lastResult = document.getElementById("lastResult");
+        let lowhi = document.getElementById("lh");
+        let count = 0;
+        function checkguess() {
+            //   console.log("ab");
+            let ran = Math.floor(Math.random() * 100) + 1;
+            let x = Number(num.value);
+            lastResult.textContent += x + ' ';
+            if (x === ran) {
+                answer.textContent = 'Congratulations! you guessed it right!';
+                answer.style.backgroundColor = 'green';
+                lowhi.textContent = "";
+                setGameOver();
+            }
+            else if (count >= 10) {
+                answer.textContent = 'GAME OVER!!!!!';
+                setGameOver();
+            }
+            else {
+                answer.textContent = 'wrong!';
+                answer.style.backgroundColor = 'red';
+                if (x > ran) {
+                    lowhi.textContent = 'Last guess was too high!';
+                }
+                else if (x < ran) {
+                    lowhi.textContent = 'Last guess was too low!';
+                }
+
+            }
+            count++;
+            num.value = "";
+        }
+        function setGameOver() {
+            num.disabled = true;
+            sub.disabled = true;
+            restartButton = document.createElement("BUTTON");
+            var t = document.createTextNode("Restart Game");
+            restartButton.appendChild(t);
+            document.body.appendChild(restartButton);
+            restartButton.addEventListener('click', restartGame);
+        }
+        function restartGame() {
+            count = 0;
+            restartButton.parentNode.removeChild(restartButton);
+            num.disabled = false;
+            sub.disabled = false;
+            num.value = "";
+            lastResult.textContent = "";
+            answer.textContent = " start guessing !";
+            answer.style.background = 'white';
+            rand = Math.floor(Math.random() * 100) + 1;
+        }
+    </script>
+
+</html>
